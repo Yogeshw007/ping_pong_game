@@ -1,0 +1,66 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(45deg, #cde9fb, #bec0f0);
+  overflow: hidden;
+}
+
+#rod-container.center {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+#rod-container > * {
+  width: 15vw;
+  min-width: 110px;
+  height: 27px;
+  border-radius: 40px;
+}
+
+#rod-1,
+#rod-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rod-1 {
+  position: fixed;
+  background-color: #c850c0;
+  top: 0px;
+}
+
+#rod-2 {
+  position: fixed;
+  background-color: #ff99ac;
+  bottom: 0px;
+}
+
+#rod-1 h5,
+#rod-2 h5 {
+  font-size: 1rem;
+  color: black;
+  display: inline;
+}
+
+#ball {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(90, 246, 194);
+  box-shadow: 0px 0px 5px black;
+}
+
+#ball {
+  left: 50%;
+}
+
+#ball.start {
+  transform: translateX(-50%);
+}
