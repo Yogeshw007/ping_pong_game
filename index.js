@@ -1,5 +1,3 @@
-import "./styles.css";
-
 //Rod1 element
 const rod1 = document.getElementById("rod-1");
 //Rod2 element
@@ -98,10 +96,10 @@ document.body.addEventListener("keypress", function (e) {
         if (rod1Score !== rod2Score) {
           alert(
             winnerPlayer +
-              " wins with score of " +
-              curMaxScore +
-              ". Max score is " +
-              localStorage.getItem("maxScore")
+            " wins with score of " +
+            curMaxScore +
+            ". Max score is " +
+            localStorage.getItem("maxScore")
           );
         }
 
@@ -199,7 +197,7 @@ function hitBallOnRod() {
   if (
     rod1.getBoundingClientRect().x <= ball.getBoundingClientRect().x &&
     ball.getBoundingClientRect().x <=
-      rod1.getBoundingClientRect().x + rod1.clientWidth
+    rod1.getBoundingClientRect().x + rod1.clientWidth
   ) {
     if (ball.getBoundingClientRect().y <= rod1.clientHeight) {
       rod1Score += 20;
